@@ -1,0 +1,64 @@
+.main-app {
+    
+    margin-top: 50px;
+    width: auto;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.menu-nav{
+    
+    padding-top: 200px;
+    display: block;
+    flex-direction: column;    
+    border-left: 5px bold black;
+    border-style: solid;
+    width: 20%;
+
+}
+
+.menu-nav button{
+    border-style: groove;
+    border: 2px solid black;
+    color:aliceblue;
+    text-shadow: 0px, 5px, 5px, 5px;   
+      
+    background-color: rgb(138, 182, 233);    
+    width: 100px;
+
+}
+
+.menu-nav button:hover{
+    background-color: rgb(9, 108, 207);  
+}
+
+.conteudo{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+        
+    border-style: solid ;
+    width: 75%;
+    
+}
+
+.conteudo button{
+    background-color: lightpink;
+    width: 100px;
+    
+}
+
+.conteudo button:hover{
+    background-color: rgb(221, 80, 80);
+    color: white;
+    width: 100px;
+    
+}
+
+
+

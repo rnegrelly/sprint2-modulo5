@@ -27,10 +27,10 @@ function App() {
         <Header/>      
         <Routes>
           <Route path='/' element={<Home/>} />
-          <Route path='/cadastrar' element={<Contextocliente><FormA/></Contextocliente>} />
-          <Route path='/form2' element={<Contextocliente><FormB/></Contextocliente>} />
-          <Route path='/form3' element={<Contextocliente><FormC/></Contextocliente>} />     
-          <Route path='/cliente' element={<Contextocliente><Clientes/></Contextocliente>} />        
+          <Route path='/cadastrar' element={<FormA/>}/>
+          <Route path='/form2' element={<FormB/>} />
+          <Route path='/form3' element={<FormC/>} />     
+          <Route path='/cliente' element={<Clientes/>} />        
         </Routes>                        
     </Router>
 

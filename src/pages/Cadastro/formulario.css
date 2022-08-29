@@ -12,8 +12,10 @@ form{
     
     display: block;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 
+    height: 320px;
 }
 
 input {
@@ -24,3 +26,5 @@ input {
 label{
     text-align: left;
 }
+
+

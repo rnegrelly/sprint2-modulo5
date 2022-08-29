@@ -9,13 +9,17 @@ const Header = () =>{
 
         <header className="header-app">
 
-            <div>
+            <div className="titulo-header">
                 <h1>Pagina de Clientes</h1>
             </div>
 
-            <Link to='/'><p>Home</p></Link>
-            <Link to='/cadastrar'><p>Cadastrar+</p></Link>
-            <Link to='/cliente'><p>Clientes</p></Link>
+            <div className="painel-nav">
+                <Link to='/'><p>Home</p></Link>
+                <Link to='/cadastrar'><p>Cadastrar+</p></Link>
+                <Link to='/cliente'><p>Clientes</p></Link>
+            </div>
+
+            
            
         </header>        
 

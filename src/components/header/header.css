@@ -1,17 +1,38 @@
+.header-app {
+    background-color: rgb(114, 114, 114);
+    color: white;
+    height: 90px;
+}
+
+
 .header-app p {
 
-    background-color: rgb(72, 73, 75);
+    background-color: rgb(9, 27, 87);
     color: white;
     width: 100px;
+
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    
         
 }
 
 .header-app p:hover {
 
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(70, 126, 238);
     color: white;
     width: 100px;
     
 
+}
+
+.painel-nav{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 

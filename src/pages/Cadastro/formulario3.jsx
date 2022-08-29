@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react"
-import { Link } from "react-router-dom"
 import Button from "../../components/button/button"
+import { Link } from "react-router-dom"
 import { Contextocliente } from "../../context/novocliente"
+
 import './formulario.css'
 
 const FormC = () =>{
@@ -14,6 +15,7 @@ const FormC = () =>{
     const [renda, setRenda] = useState("");
 
     const enviaCadastro = () => {
+
         enviar({nome, sobrenome, email, telefone, cep, ruaum, ruadois, dataNascimento, cpf, renda})
     }
 
@@ -26,9 +28,8 @@ const FormC = () =>{
                 <label>Renda:<br></br><input type='text' value={renda} onChange={(e)=>setRenda(e.target.value)}></input></label><br></br><br></br>
                 
                 <Link to='/cliente'>
-                    <Button textobotao='Salvar' onClick={enviaCadastro}/>
-                </Link>
-                
+                    <Button textobotao='Enviar' onClick={enviaCadastro}/>
+                </Link>                
             </form>            
         </div>
 

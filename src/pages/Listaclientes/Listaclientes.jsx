@@ -6,7 +6,8 @@ const Clientes = () =>{
 
     return(
         <div>
-            <Header/>
+           
+           MOSTRA DADOS DO CLIENTE
 
         </div>
     )

@@ -5,7 +5,6 @@ import { Contextocliente } from "../../context/novocliente"
 
 import './formulario.css'
 
-
 const FormB = () =>{
 
     const {nome, sobrenome, email, telefone} = useState(Contextocliente)
@@ -18,9 +17,7 @@ const FormB = () =>{
     const enviaCadastro = ()=>{
 
         enviar({nome, sobrenome, email, telefone, cep, ruaum, ruadois})
-
-    }
-    
+    }    
 
     return(
 
@@ -29,12 +26,11 @@ const FormB = () =>{
                 <label>CEP:<br></br><input type='text' value={cep} onChange={(e)=>{setCep(e.target.value)}}></input></label><br></br><br></br>
                 <label>Endereço 1:<br></br><input type='text' value={ruaum} onChange={(e)=>{setRuaum(e.target.value)}}></input></label><br></br><br></br>
                 <label>Endereço 2:<br></br><input type='text' value={ruadois} onChange={(e)=>{setRuadois(e.target.value)}}></input></label><br></br><br></br>
-            </form>
 
-            <Link to='/form3'>
-                <Button textobotao='Próximo' onClick={enviaCadastro}/>
-            </Link>
-            
+                <Link to='/form3'>
+                    <Button textobotao='Próximo' onClick={enviaCadastro}/>
+                </Link>
+            </form>            
         </div>
 
     )

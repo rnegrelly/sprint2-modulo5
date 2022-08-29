@@ -1,13 +1,9 @@
-import React, { useContext, useState } from "react"
+import React, {useContext, useState} from "react"
 import Button from "../../components/button/button"
-import Header from "../../components/header/header"
 import { Link } from "react-router-dom"
-
-
-
-import './formulario.css'
 import { Contextocliente } from "../../context/novocliente"
 
+import './formulario.css'
 
 const FormA = () =>{
 
@@ -19,15 +15,13 @@ const FormA = () =>{
     const [telefone, setTelefone] = useState("");
 
     const enviaCadastro = () => {
+
         enviar({nome, sobrenome, email, telefone})
     }
 
     return(
         
         <div>
-            
-            <Header/>
-
             <main>
                 <div className="formulario-um">
                     <form>
@@ -39,9 +33,7 @@ const FormA = () =>{
                         <Link to='/form2'>
                             <Button textobotao='Próximo' onClick={enviaCadastro}/>
                         </Link>
-
-                    </form>
-                    
+                    </form>                    
                 </div>
             </main>
         </div>

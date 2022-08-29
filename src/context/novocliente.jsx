@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createContext } from "react";
 
 export const Contextocliente = createContext();
+
 export const NovoCliente = ({children}) => {
 
     const [nome, setNome] = useState('');
@@ -38,12 +39,8 @@ export const NovoCliente = ({children}) => {
     };
 
     return (
-      <Contextocliente.Provider
-        value={{ nome, sobrenome, email, telefone, cep, ruaum, ruadois, dataNascimento, cpf, renda, enviar: enviaCadastro }}
-      >
+      <Contextocliente.Provider value={{ nome, sobrenome, email, telefone, cep, ruaum, ruadois, dataNascimento, cpf, renda, enviar: enviaCadastro }}>
         {children}
       </Contextocliente.Provider>
     );
-
-
 }

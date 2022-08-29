@@ -22,19 +22,23 @@ function App() {
     //   <Home />                         
     // </div>
 
-    <div className="App">
-      <Router>      
-        <Header/>      
-        <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/cadastrar' element={<FormA/>}/>
-          <Route path='/form2' element={<FormB/>} />
-          <Route path='/form3' element={<FormC/>} />     
-          <Route path='/cliente' element={<Clientes/>} />        
-        </Routes>                        
-    </Router>
+  
+      <div className="App">
 
-    </div>
+        <Router>      
+          <Header/>      
+          <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/cadastrar' element={<FormA/>}/>
+            <Route path='/form2' element={<FormB/>} />
+            <Route path='/form3' element={<FormC/>} />     
+            <Route path='/cliente' element={<Clientes/>} />        
+          </Routes>                        
+        </Router>
+
+      </div>        
+    
+
     
   );
 }
